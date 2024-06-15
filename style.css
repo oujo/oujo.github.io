@@ -1,0 +1,620 @@
+@import url("reset.css");
+
+html{
+    font-size: 62.5%; /* 預設字級是16px, 16 x 62.5% ＝ 10 , 方便計算*/
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-image: url(../russioustable/picture/home_kv_bg.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 4rem;
+    color: #E36E28;
+}
+
+h3{
+    font-size: 2rem;
+    color: black;
+    font-weight: normal;
+}
+
+p{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: normal;
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* -------------- Mods -------------  */
+/* 模組化(共用元件) */
+.sec-white{
+    background-color: white;
+}
+
+.main-block{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+    /* border: 1px solid red; */
+}
+
+.top-blur{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 1;
+}
+
+.top-white{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    z-index: 1;
+}
+
+.small-logo img{
+    display: block;
+    width: 120px;
+    height: 48px;
+    float: left;
+}
+
+.btn-more{
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 74px;
+    text-align: center;
+    align-content: center;
+    font-size: 1.6rem;
+}
+
+.btn-more .fa-solid{
+    padding-right: 10px;
+}
+
+.wrapper{
+    /* max-width: 1440px; */
+    margin: 0 auto;
+}
+
+/* ------------------- Top Bar Black ------------------- */
+.topBar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.topBar ul{
+    display: flex;
+    margin-left: auto;
+}
+
+.topBar li{
+    padding-left: 30px;
+}
+
+.top li a{
+    display: block;
+    line-height: 40px;
+}
+
+.topBar button{
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 16px;
+    margin-left: 30px;
+}
+
+.topBar .fa-brands{
+    padding-right: 8px;
+}
+
+.topBar .fa-envelope{
+    padding-right: 8px;
+}
+
+/* ------------------- KV Block ------------------------ */
+.kv{
+    height: 700px;
+    position: relative;
+}
+
+.kv h1{
+    font-family: "Literata", serif;
+    color: white;
+    font-size: 13rem;
+    font-weight: bold;
+    line-height: 1;
+    /* text-align: center; */
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* ------------------- Section1 Block ------------------ */
+.section1 h2{
+    margin-top: 155px;
+    margin-bottom: 10px;
+}
+
+.section1 p{
+    padding-right: 200px;
+}
+
+.section1 ul{
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 155px;
+}
+
+.section1 li{}
+
+.section1 li:nth-child(2){
+    padding: 0 20px;
+}
+
+.section1 li a{}
+
+.section1 li img{
+    display: block;
+}
+
+.section1 h3{
+    padding-top: 5px;
+}
+
+/* ------------------- Section2 Block ------------------ */
+.section2 .main-block{
+    padding: 80px 0;
+}
+.section2 .sc2-left{
+    width: 540px;
+    float: left;
+}
+
+.sc2-left h2{
+    margin-bottom: 20px;
+}
+
+.sc2-left p{
+    margin-bottom: 30px;
+}
+
+.sc2-left img{
+    width: 100%;
+    display: block;
+    padding-left: 30px;
+}
+
+
+.section2 .sc2-right{
+    width: 360px;
+    float: right;
+    margin-top: 128px;
+    margin-left: 30px;
+}
+
+.sc2-right img{
+    width: 246px;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.sc2-right p{
+    padding-bottom: 30px;
+}
+
+/* ------------------- Section3 Block ------------------ */
+.section3 .main-block{
+    background-image: url(../russioustable/picture/home_se_bg.png);
+    background-size: cover;
+    height: 640px;
+    text-align: center;
+}
+
+.section3 h2{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.section3 ul{
+    display: inline-flex;
+}
+
+.section3 li{
+    width: 150px;
+    padding: 0 50px;
+
+}
+
+.section3 li img{
+    display: block;
+}
+
+.vision-list li h3 , .vision-list li p{
+    color: #E36E28;
+}
+
+/* ------------------- Section4 Block ------------------ */
+.section4 .main-block{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.section4 h2{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.section4 p{}
+
+.sharing-list{
+    display: flex;
+    height: 400px;
+    padding: 80px 0;
+    align-items: center;
+    position: absolute;
+    left: 0;
+
+    animation: share-card 20s linear infinite;
+}
+
+@keyframes share-card{
+    0%{ left: o;}
+    100%{ left: -100%;}
+}
+
+.sharing-list li{
+    padding: 0 10px;
+}
+
+.sharing-list li a{
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px 24px;
+}
+
+.sharing-list li a:hover{
+    width: 300px;
+    height: 400px;
+    border: none;
+    background-image: url(../russioustable/picture/sharing_bg.png);
+}
+
+.sharing-list li a:hover h3 , .sharing-list li a:hover p{
+    color: white;
+}
+
+.sharing-list li img{
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+
+.sharing-list li p{
+    text-align: left;
+}
+
+.section4 .btn-more{
+    margin: 560px auto 0;
+}
+
+
+/* ------------------- Section5 Block ------------------ */
+.section5{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(227,110,40,1) 40%);
+}
+
+.section5 img{
+    display: block;
+    margin: 80px auto 0;
+}
+
+.section5 iframe{
+    margin: 70px 0;
+}
+
+/* ------------------- Footer -------------------------- */
+footer{
+    background-color: #E36E28;
+}
+
+.footer-top img{
+    width: 255px;
+    margin-top: 50px;
+}
+
+.footer-top ul{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 30px 0px;
+    border-bottom: 1px solid white;
+}
+
+.footer-top li{}
+
+.footer-top li a{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: white;
+    padding-right: 30px;
+}
+
+.footer-top .fa-brands{
+    padding-left: 8px;
+}
+
+.footer-bottom{
+    height: 100px;
+    align-content: center;
+}
+
+.footer-bottom p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer-bottom ul{
+    float: left;
+}
+
+.footer-bottom .copyright{
+    float: right;
+}
+
+
+/* ------------------- News Block -------------------------- */
+.nw-main{
+    padding-top: 100px;
+}
+
+.news-sec h2{
+    text-align: center;
+    color: black;
+    margin: 40px 0;
+}
+
+.news-box li a{
+    display: block;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid black;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+.news-sec h3{
+    font-size: 2.6rem;
+    color: black;
+    margin: 10px 0;
+}
+
+.news-sec p{
+    padding-bottom: 10px;
+}
+
+.nwes-tb{
+    width: 570px;
+    float: left;
+}
+
+.news-sec img{
+    display: block;
+    float: right;
+}
+
+
+/* ------------------- Product Block -------------------------- */
+.pro-main{
+    padding-top: 100px;
+}
+
+.pro-sec h2{
+    text-align: center;
+    color: black;
+    margin: 40px 0;
+}
+
+.pro-sec h3{
+    font-size: 3rem;
+    color: #E36E28;
+    padding-bottom: 5px;
+}
+
+.pro-sec .imgbox{
+    display: flex;
+    height: 380px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.pro-sec .imgbox li{
+    background-size: cover;
+    background-position: center center;
+
+    transition: 1s;
+    flex-grow: 1;
+    filter: grayscale(1);
+}
+
+.pro-sec li:hover{
+    flex-grow: 3;
+    filter: grayscale(0);
+}
+
+.item1{background-image: url('../russioustable/picture/pro_pic01.jpg');}
+.item2{background-image: url('../russioustable/picture/pro_pic02.jpg');}
+.item3{background-image: url('../russioustable/picture/pro_pic03.jpg');}
+.item4{background-image: url('../russioustable/picture/pro_pic04.jpg');}
+.item5{background-image: url('../russioustable/picture/pro_pic05.jpg');}
+.item6{background-image: url('../russioustable/picture/pro_pic06.jpg');}
+.item7{background-image: url('../russioustable/picture/pro_pic07.jpg');}
+.item8{background-image: url('../russioustable/picture/pro_pic08.jpg');}
+.item9{background-image: url('../russioustable/picture/pro_pic09.jpg');}
+
+/* ------------------- Course Block -------------------------- */
+.cou-main{
+    padding-top: 100px;
+}
+
+.cou-sec h2{
+    text-align: center;
+    color: black;
+    margin: 40px 0;
+}
+
+.cou-sec .cou-ad img{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cou-sec .cou-ad a{
+    display: block;
+    border: 1px solid black;
+    font-style: italic;
+    font-size: 2rem;
+    color: black;
+    line-height: 80px;
+    text-align: center;
+}
+
+.cou-sec .cou-ad a:hover{
+    background-color: #E36E28;
+    color: white;
+    border:none
+}
+
+
+
+/* ------------------- Floriography Block -------------------------- */
+.flo-main{
+    padding-top: 100px;
+}
+
+.flo-sec h2{
+    text-align: center;
+    color: black;
+    margin: 40px 0;
+}
+
+.flo-sec .list-box{
+    float: left;
+}
+
+.flo-sec .list-box p{
+    width: 190px;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.flo-sec .list-box a{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.flo-inp{
+    width: 190px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin: 10px 0;
+    text-align: center;
+    align-content: center;
+
+}
+
+.flo-inp .fa-solid{
+    padding-right: 4px;
+}
+
+.flo-search{
+    line-height: 30px;
+    border: none;
+    outline: none;
+}
+
+.flo-sec .flo-itemsbox{
+    float: right;
+}
+
+.flo-sec .flo-itemsbox ul{
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.flo-sec .flo-itemsbox li{
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.flo-sec .flo-itemsbox p{
+    margin-bottom: 20px;
+}
+
+.flo-sec .flo-itemsbox a{
+    display: block;
+    width: 235px;
+}
+
+.flo-sec .flo-itemsbox img{
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
